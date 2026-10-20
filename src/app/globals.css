@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --header: 68px; }
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header) + 16px); }
+  body { @apply bg-white text-slate-700 antialiased; }
+  h1, h2, h3 { @apply text-navy tracking-tight; }
+  :focus-visible { @apply rounded outline outline-[3px] outline-offset-2 outline-brand-500; }
+}
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold transition duration-200 active:scale-[.97]; }
+  .btn-primary { @apply btn bg-brand-600 text-white shadow-lg shadow-brand-600/30 hover:bg-brand-700; }
+  .btn-light { @apply btn bg-white text-navy hover:bg-brand-50; }
+  .btn-outline { @apply btn border border-white/40 text-white hover:bg-white/10; }
+  .section { @apply px-5 py-20 md:py-28; }
+  .container-x { @apply mx-auto max-w-6xl; }
+  .section-title { @apply text-4xl font-semibold leading-[1.05] md:text-5xl; }
+
+  /* Pinned treatment walkthrough: these rules only apply once the script switches on `pin-on`. */
+  .treat:not(.pin-on) .t-step { @apply mb-12; }
+  .treat.pin-on .treat-in { height: calc(100svh - var(--header)); padding-block: 1.25rem; }
+  .treat.pin-on .t-rail { display: flex; }
+  .treat.pin-on .t-steps { display: grid; }
+  .treat.pin-on .t-step { grid-area: 1 / 1; align-self: start; }
+  .treat.pin-on .t-knee { width: 100%; height: calc(100svh - var(--header) - 2.5rem); object-fit: cover; }
+  @media (max-width: 1023px) {
+    .treat.pin-on .treat-in { grid-template-rows: auto 1fr; gap: 1rem; align-content: start; }
+    .treat.pin-on .t-knee { height: 24svh; }
+    .treat.pin-on .t-banner { aspect-ratio: 16 / 5; margin-bottom: 1rem; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, ::before, ::after { animation-duration: .01ms !important; animation-delay: 0ms !important; transition-duration: .01ms !important; }
+}
