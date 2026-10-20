@@ -13,7 +13,7 @@ export default function Faq() {
                 {f.q}
                 <PlusIcon className="h-5 w-5 flex-none text-brand-600 transition group-open:rotate-45" />
               </summary>
-              <p className="mt-3 leading-relaxed">{f.a}</p>
+              <div className="mt-3 leading-relaxed text-slate-600">{f.a}</div>
             </details>
           ))}
         </div>

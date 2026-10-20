@@ -3,14 +3,12 @@ export const clinic = {
   name: 'NishVa Arthritis & Rheumatology Clinic',
   shortName: 'NishVa',
   doctor: {
-    name: 'Dr. Neel Patel',
+    name: 'Dr. Neel P Patel',
     role: 'Consultant Rheumatologist',
     photo: '/images/doctor/dr-neel-patel.jpeg',
     credentials: ['MD (Medicine)', 'Post-doctoral fellowship in Rheumatology (Bombay)', 'Adult rheumatological diseases'],
     bio: [
-      'Dr. Neel Patel is a consultant rheumatologist who specialises in adult rheumatological diseases. He holds an MD in Medicine and completed a post-doctoral fellowship in Rheumatology in Bombay, with three years of fellowship experience.',
-      'He previously worked as an associate consultant in rheumatology at Fortis Hospital, Mulund.',
-      'Once a condition is identified, he discusses a plan that can combine quick-relief treatment with slower-acting medicines and lifestyle changes for long-term control.',
+      'Dr. Neel P Patel is a consultant rheumatologist who specialises in adult rheumatological diseases. He holds an MD in Medicine and completed a post-doctoral fellowship in Rheumatology in Mumbai, with three years of fellowship experience'
     ],
   },
   contact: {
@@ -34,6 +32,7 @@ export const clinic = {
     facebook: 'https://www.facebook.com/',
     instagram: 'https://www.instagram.com/YOUR-PAGE',
     linkedin: 'https://www.linkedin.com/company/YOUR-PAGE',
+    whatsapp: 'https://wa.me/919106351098?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment.',
   },
   // Set NEXT_PUBLIC_APPOINTMENT_ENDPOINT in .env.local to switch the form on.
   appointmentEndpoint: process.env.NEXT_PUBLIC_APPOINTMENT_ENDPOINT || '',

@@ -5,7 +5,7 @@ export const metadata = { title: 'About Dr. Neel Patel' };
 export default function Page() {
   return (
     <>
-      <PageHero title="About Dr. Neel Patel" intro="Consultant rheumatologist for adults with arthritis and autoimmune conditions." />
+      <PageHero title="About Dr. Neel P Patel" intro="Consultant rheumatologist for adults with arthritis and autoimmune conditions." />
       <About />
     </>
   );

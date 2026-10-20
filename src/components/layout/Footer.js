@@ -4,7 +4,7 @@ import { footerLinks } from '@/data/content';
 import SocialLinks from '@/components/layout/SocialLinks';  
 // Footer order: brand (logo, name, description), quick links, contact us.
 export default function Footer() {
-  const { contact, hours, doctor } = clinic;
+  const { contact, doctor } = clinic;
   return (
     <footer className="bg-navy-900 px-5 pb-24 pt-14 text-sm text-blue-100/80 md:pb-14">
       <div className="container-x grid gap-12 md:grid-cols-[1.4fr_1fr_1.2fr]">
@@ -29,7 +29,6 @@ export default function Footer() {
           <p className="font-semibold text-white">Contact us</p>
           <address className="mt-4 grid gap-3 not-italic leading-relaxed">
             <p>{contact.addressLines.map((l) => <span key={l} className="block">{l}</span>)}</p>
-            <p>{hours.label}<br />{hours.range}</p>
             <p>
               <a href={contact.phoneHref} className="transition hover:text-white">{contact.phone}</a><br />
               <a href={`mailto:${contact.email}`} className="break-all transition hover:text-white">{contact.email}</a>

@@ -5,6 +5,7 @@ const networks = [
   { key: 'facebook', label: 'Facebook', icon: '/images/social/facebook.svg' },
   { key: 'instagram', label: 'Instagram', icon: '/images/social/instagram.svg' },
   { key: 'linkedin', label: 'LinkedIn', icon: '/images/social/linkedin.svg' },
+  { key: 'whatsapp', label: 'WhatsApp', icon: '/images/social/whatsapp.svg' },
 ];
 
 export default function SocialLinks() {

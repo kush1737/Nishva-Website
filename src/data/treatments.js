@@ -14,5 +14,5 @@ export const treatmentSteps = [
   { title: 'Lifestyle and nutrition support', image: '/images/treatment/nutrition.jpg', alt: 'A bowl of salmon, avocado and colourful vegetables',
     points: ['Anti-inflammatory diet', 'Healthy weight management', 'Joint-friendly habits'] },
   { title: 'Advanced treatment options', image: '/images/treatment/advanced.jpg', alt: 'A syringe and a medicine vial',
-    points: ['Joint injections (steroids or hyaluronic acid)', 'Biologic and targeted therapy', 'Minimally invasive procedures, when needed'] },
+    points: ['Joint injections (steroids or hyaluronic acid)', 'Biologic and targeted therapy'] },
 ];

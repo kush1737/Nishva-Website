@@ -43,7 +43,31 @@ export const benefits = [
 ];
 
 export const faqs = [
-  { q: 'What is a rheumatologist?', a: 'A physician who diagnoses and treats diseases of the joints, muscles and immune system, such as arthritis and lupus.' },
+  {
+    q: 'What is a rheumatologist?',
+    a: (
+      <div className="space-y-3">
+        <p>A rheumatologist is an internal medicine physician who specializes in diagnosing and treating autoimmune disorders, inflammatory conditions, and diseases affecting the joints, muscles, bones, and connective tissues.</p>
+        <div className="pt-2">
+          <p className="font-semibold text-navy">What They Do</p>
+          <ul className="mt-2.5 space-y-2">
+            <li className="flex items-start gap-2.5">
+              <span className="text-brand-600 font-bold mt-0.5">•</span>
+              <span><strong className="text-navy font-semibold">Diagnose Complex Conditions:</strong> They evaluate more than 100 types of arthritis and systemic diseases that cause chronic pain, swelling, and stiffness.</span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <span className="text-brand-600 font-bold mt-0.5">•</span>
+              <span><strong className="text-navy font-semibold">Manage Non-Surgical Treatments:</strong> Unlike orthopedic surgeons, rheumatologists treat musculoskeletal issues using medication, lifestyle adjustments, and joint injections rather than surgery.</span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <span className="text-brand-600 font-bold mt-0.5">•</span>
+              <span><strong className="text-navy font-semibold">Target the Immune System:</strong> They frequently treat conditions where a misdirected immune system attacks healthy tissues.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
   { q: 'Do I need a referral?', a: 'Please call the clinic to ask. You are welcome to bring any earlier reports with you.' },
   { q: 'What should I bring?', a: 'Past test reports and scans, a list of current medicines, and short notes on your symptoms.' },
   { q: 'Is this an emergency service?', a: 'No. For sudden severe symptoms, go to your nearest hospital emergency department.' },
