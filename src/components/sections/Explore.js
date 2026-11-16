@@ -5,7 +5,7 @@ const cards = [
   { href: '/services', title: 'Conditions we treat', text: 'Arthritis, autoimmune and connective tissue diseases, in plain language.' },
   { href: '/treatment', title: 'How we treat', text: 'Medication, therapy, lifestyle support and advanced options, step by step.' },
   { href: '/first-visit', title: 'Your first visit', text: 'The signs worth getting checked, and what to expect when you come in.' },
-  { href: '/appointment', title: 'Book an appointment', text: 'Hours, address, phone, WhatsApp and a request form.' },
+  { href: '/appointment', title: 'Book an appointment', text: 'Hours, address, direct phone contact and request form.' },
 ];
 
 // Home-page doorway into the other pages.

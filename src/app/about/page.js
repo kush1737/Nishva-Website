@@ -1,6 +1,6 @@
 import PageHero from '@/components/ui/PageHero';
 import About from '@/components/sections/About';
-export const metadata = { title: 'About Dr. Neel Patel' };
+export const metadata = { title: 'About Dr. Neel P Patel' };
 
 export default function Page() {
   return (

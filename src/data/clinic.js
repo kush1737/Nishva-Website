@@ -21,13 +21,58 @@ export const clinic = {
   },
   // Listed hours (Indian Standard Time). Minutes are counted from midnight.
   hours: {
-    days: ['Monday', 'Thursday', 'Friday'],
-    label: 'Mon, Thu, Fri',
-    range: '10:00 AM to 3:00 PM',
-    openMinutes: 600,
-    closeMinutes: 900,
-    note: 'Timings are as listed on the clinic’s booking page. Please call to confirm before you travel.',
+    days: ['Monday', 'Thursday', 'Friday', 'Saturday'],
+    label: 'Mon, Thu, Fri: 11:30 AM - 2 PM | Sat: 4 PM - 6 PM',
+    range: 'Surat (Vesu) & Visiting OPD Centers',
+    openMinutes: 690,
+    closeMinutes: 840,
+    note: 'Consultations available across Surat (Vesu) and visiting OPD centers in Bardoli, Vyara, Mandvi, Navsari, and Kamrej. Please call to confirm before your visit.',
   },
+  schedules: [
+    {
+      location: 'Surat, Vesu',
+      tag: 'Main Clinic',
+      timings: [
+        { days: 'Monday, Thursday, Friday', time: '11:30 AM to 2 PM' },
+        { days: 'Saturday', time: '4 PM to 6 PM' },
+      ],
+    },
+    {
+      location: 'Bardoli',
+      tag: 'Visiting OPD',
+      timings: [
+        { days: 'Every Wednesday', time: '5 to 7 PM' },
+      ],
+    },
+    {
+      location: 'Vyara',
+      tag: 'Visiting OPD',
+      timings: [
+        { days: 'Every 1st, 3rd and 5th Wednesday', time: '11 AM to 1 PM' },
+      ],
+    },
+    {
+      location: 'Mandvi',
+      tag: 'Visiting OPD',
+      timings: [
+        { days: 'Every 2nd and 4th Wednesday', time: '11 AM to 1 PM' },
+      ],
+    },
+    {
+      location: 'Navsari',
+      tag: 'Visiting OPD',
+      timings: [
+        { days: 'Every Tuesday', time: '11 AM to 1 PM' },
+      ],
+    },
+    {
+      location: 'Kamrej',
+      tag: 'Visiting OPD',
+      timings: [
+        { days: 'Every 1st, 3rd and 5th Sunday', time: '11 AM to 1 PM' },
+      ],
+    },
+  ],
    social: {
     facebook: 'https://www.facebook.com/',
     instagram: 'https://www.instagram.com/YOUR-PAGE',

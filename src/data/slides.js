@@ -6,7 +6,7 @@ export const slides = [
     alt: 'Illustration of both hands with inflamed finger and wrist joints highlighted',
     eyebrow: 'Rheumatoid arthritis',
     title: 'Understand your joints. Reclaim your movement.',
-    text: 'Specialist care for adults with arthritis and autoimmune conditions, with Dr. Neel Patel in Vesu, Surat.',
+    text: 'Specialist care for adults with arthritis and autoimmune conditions, with Dr. Neel P Patel in Vesu, Surat.',
   },
   {
     id: 'spine',

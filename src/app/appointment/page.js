@@ -6,7 +6,7 @@ export const metadata = { title: 'Appointment' };
 export default function Page() {
   return (
     <>
-      <PageHero title="Appointment" intro="Hours, address, phone and WhatsApp, plus a request form and answers to common questions." />
+      <PageHero title="Appointment" intro="Hours, address, phone contact, plus an appointment request form and answers to common questions." />
       <Appointment />
       <Faq />
     </>
